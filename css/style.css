@@ -5,9 +5,7 @@
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
-  
 }
-
 body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
@@ -17,16 +15,23 @@ body {
 /*HEADER top bar*/
 .top-bar {
   /*background:hsl(39, 52%, 76%);*/
-  background-image: linear-gradient( #493428, #7c5835);
+  background-image: url('../img/OzadjeWhitePaint.jpg');
   height: 2.8rem;
   padding: .5rem 0;
+  box-sizing: content-box;
 }
 .top-bar a {
-  color: rgb(255, 254, 251);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1.1 rem;
   font-weight: 450;
-  
+}
+.top-bar-bottom {
+  background-image: url('../img/OzadjeWhitePaint.jpg');
+  height: 1.4rem;
+  padding: .5rem 0;
+  box-sizing: content-box;
+  box-shadow: 0 .5rem .7rem rgba(0, 0, 0, .1);
 }
 
 /*NAVIGATION*/
@@ -37,8 +42,9 @@ body {
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: .12rem;
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+  box-shadow: 0.2rem .2rem .4rem #dfaf83;
   z-index: 1; /*on top of the image*/
+  background-image: linear-gradient(to right, #f2ceac, #fcf6f1);
 }
 .nav-item {
   padding: .5rem; 
@@ -57,15 +63,14 @@ body {
 }
 .carousel-inner {
   max-height: 38rem !important;
+  padding-top: 50px;
 }
-
 /*---Change Carousel Transition Speed --*/
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
   transition: transform 1.2s ease;
 }
-
 /*-- Carousel Content --*/
 .carousel-caption {
   position: absolute;
@@ -89,25 +94,7 @@ body {
   font-size: 2.2rem;
   text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
 }
-.btn-lg {
-  border-radius: 0;
-  text-transform: uppercase;
-  font-size: 1rem;
-  border-width: medium;
-}
-.btn-danger {
-  background-color: #AC2615;
-  border: .05rem solid #AC2615;
-}
-.btn-primary {
-  background-color: #6e4f32;
-  border: .05rem solid #6e4f32;
-}
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #df9d60!important;
-  border: .05rem solid #df9d60!important;
-}
+
 
 /*===== FIXED BACKGROUND IMG =====*/
  .fixed-background {
@@ -170,7 +157,6 @@ body {
   margin: 70px 0;
 }
 .big-container{
-  background-image: url('../img/OzadjeWhitePaint.jpg');
   width: 100%;
 }
 .small-container{
@@ -315,6 +301,18 @@ input:focus{
   position: fixed;
 }
 
+/*---O NAS---*/
+
+.padding {
+  padding: 80px 0;
+}
+.padding img {
+  width: 100%;
+}
+
+
+
+
 /*---KONTAKT FORM---*/
 body,
 input,
@@ -324,15 +322,12 @@ textarea {
 .container1 {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  padding: 2rem;
+  padding-top: 0;
   background-image:( url('../img/ozadjeKontakt.jpg'));
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 90px;
-
 }
 .form {
   width: 100%;
@@ -417,10 +412,10 @@ textarea.input {
 }
 .btn {
   padding: 0.6rem 1.3rem;
-  background-color: #fff;
-  border: 2px solid #fafafa;
+  background-color: #fff !important;
+  border: 2px solid #c5762c !important;
   font-size: 0.95rem;
-  color: #c5762c;
+  color: #543315;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -429,8 +424,9 @@ textarea.input {
   margin: 0;
 }
 .btn:hover {
-  background-color:#c5762c;
-  color: #fff;
+  background-color:#c5762c !important;
+  color: #fff !important;
+  border: #543315 !important;
 }
 .input-container span {
   position: absolute;
@@ -579,8 +575,6 @@ textarea.input {
   }
 }
 
-
-
 /*-- Emoji Navbar --*/
 .emoji {
   background-image: linear-gradient(to right, #4981b3, #ac2615);
@@ -592,7 +586,6 @@ textarea.input {
   color: white;
   font-size: 2rem;
 }
-
 
 /*============= FOOTER =============*/
 footer {
