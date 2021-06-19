@@ -28,35 +28,58 @@ body {
 }
 .top-bar-bottom {
   background-image: url('../img/OzadjeWhitePaint.jpg');
-  height: 1.4rem;
+  height: 1.5rem;
   padding: .5rem 0;
   box-sizing: content-box;
   box-shadow: 0 .5rem .7rem rgba(0, 0, 0, .1);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 /*NAVIGATION*/
 .navbar-brand img {
-  height: 3rem;
+  height: 9rem;
+  position:absolute;
+  margin-top: -70px;
+  margin-left: 15px;
+  
 }
 .navbar {
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: .12rem;
-  box-shadow: 0.2rem .2rem .4rem #dfaf83;
+  box-shadow: 0.2rem .2rem 1rem #dab97dc9;
   z-index: 1; /*on top of the image*/
-  background-image: linear-gradient(to right, #f2ceac, #fcf6f1);
+  background-image: linear-gradient(to right, #fdfbf7, #d6ae64);
+  
 }
 .nav-item {
   padding: .5rem; 
 }
 .nav-link {
   color: rgb(75, 56, 34)!important;
+  display: unset!important;
+  
+ 
 }
-.nav-link.active,
+.nav-link.active {
+  color: rgb(82, 65, 34)!important;
+  display: unset!important;
+  text-decoration: unset!important;
+}
 .nav-link:hover {
-  color: rgb(204, 120, 18)!important;
+  color: rgb(255, 247, 220)!important;
 }
+.navbar a {
+  color: #7a5926!important;
+  padding: .5rem!important;
+  text-decoration: unset!important;
+}
+
+li {
+  text-align: right;
+}
+
+
 
 /*CAROUSEL*/
 #carousel {
@@ -88,13 +111,19 @@ body {
   text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
 }
 .border-primary {
-  border-top: .2rem solid #df9d60 !important;
+  border-top: .2rem solid hsl(39, 56%, 59%) !important;
+
 }
 .carousel-caption h3 {
   font-size: 2.2rem;
   text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
 }
 
+/*===== JUMBOTRON =====*/
+
+.mb-0, .my-0 {
+  margin-bottom: 0px !important;
+}
 
 /*===== FIXED BACKGROUND IMG =====*/
  .fixed-background {
@@ -134,7 +163,7 @@ body {
 .btnCART{
   padding: 8px 30px;
   padding: 0.6rem 1.3rem;
-  background-color: #c5762c;
+  background-color: hsl(39, 56%, 59%);
   border: 2px solid #9d6022;
   font-size: 0.95rem;
   color: #ffffff;
@@ -148,7 +177,7 @@ body {
   position: absolute;
 }
 .btnCART:hover{
-  background: #df9d60;
+  background: rgb(202, 154, 65);
   color: #ffffff;
   text-decoration: none;
 }
@@ -229,7 +258,7 @@ h4{
   font-size: 14px;
 }
 .rating .fa{
-  color: #ff523b;
+  color: hsl(39, 56%, 59%);
 }
 .col-4:hover{
   transform: translateY(-5px);
@@ -254,7 +283,7 @@ h4{
   display: block;
   padding: 10px;
   margin-top: 20px;
-  border: 1px solid #c5762c;
+  border: 1px solid hsl(39, 56%, 59%);
 }
 
 .single-product input{
@@ -263,7 +292,7 @@ h4{
   padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
-  border: 2px solid #c5762c;
+  border: 2px solid hsl(39, 56%, 59%);
   margin-top: 20px;
 }
 input:focus{
@@ -271,7 +300,7 @@ input:focus{
 }
 
 .single-product .fa{
-  color: #ff523b;
+  color: hsl(39, 56%, 59%);
   margin-left: 10px;
 }
 .small-img-row{
@@ -322,13 +351,14 @@ textarea {
 .container1 {
   position: relative;
   width: 100%;
-  margin-top: 40px;
-  padding-top: 0;
+  min-height: 100vh;
+  padding: 2rem;
   background-image:( url('../img/ozadjeKontakt.jpg'));
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .form {
   width: 100%;
@@ -342,16 +372,18 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
 }
 .contact-form {
-  background-color: #df9d60;
+  background-color: hsla(31, 53%, 24%, 0.987);
   position: relative;
   border-radius: 1rem;
+  opacity: 90%;
+  
 }
 .contact-form:before {
   content: "";
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #c5762c;
+  background-color: hsl(31, 60%, 55%);
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -374,15 +406,15 @@ form {
   position: relative;
   margin: 1rem 0;
 }
-.input {
+.input  {
   width: 100%;
   outline: none;
   border: 2px solid #fafafa;
   background: none;
   padding: 0.6rem 1.2rem;
-  color: #fff;
-  font-weight: 650;
-  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 390;
+  font-size: 1rem;
   letter-spacing: 0.5px;
   border-radius: 30px;
   transition: 0.3s;
@@ -394,6 +426,10 @@ textarea.input {
   resize: none;
   overflow-y: auto;
 }
+::placeholder {
+  color:white;
+}
+
 .input-container label {
   position: absolute;
   top: 50%;
@@ -414,7 +450,7 @@ textarea.input {
 .btn {
   padding: 0.6rem 1.3rem;
   background-color: #fff !important;
-  border: 2px solid #c5762c !important;
+  border: 2px solid hsl(31, 60%, 55%) !important;
   font-size: 0.95rem;
   color: #543315;
   line-height: 1;
@@ -425,7 +461,7 @@ textarea.input {
   margin: 0;
 }
 .btn:hover {
-  background-color:#c5762c !important;
+  background-color:hsl(31, 60%, 55%) !important;
   color: #fff !important;
   border: #543315 !important;
 }
@@ -507,7 +543,7 @@ textarea.input {
   width: 37px;
   height: 37px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #c5762c, #ca5e15);
+  background: linear-gradient(45deg, hsl(39, 56%, 59%), rgb(202, 154, 65));
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -591,7 +627,8 @@ textarea.input {
 /*============= FOOTER =============*/
 footer {
   background-color: #3f2d1f;
-  background-image: linear-gradient(#7c5835, #493428);
+  background-image: url('../img/OzadjeWhitePaint.jpg');
+ /*background-image: linear-gradient(#7c5835, #493428);*/
   padding: 1rem 2rem 3 rem;
   
 }
@@ -601,7 +638,7 @@ footer img {
 }
 footer p, footer a,
 .socket a {
-  color: white;
+  color: rgb(61, 57, 52);
   text-decoration: none;
 }
 ul.social {
@@ -618,7 +655,7 @@ footer .svg-inline--fa {
   font-size: 2.3rem;
 }
 footer .svg-inline--fa:hover {
-  color: #df9d60;
+  color: rgb(202, 154, 65);
 }
 
 
