@@ -32,6 +32,7 @@ body {
   padding: .5rem 0;
   box-sizing: content-box;
   box-shadow: 0 .5rem .7rem rgba(0, 0, 0, .1);
+  margin-bottom: 40px;
 }
 
 /*NAVIGATION*/
@@ -63,7 +64,6 @@ body {
 }
 .carousel-inner {
   max-height: 38rem !important;
-  padding-top: 50px;
 }
 /*---Change Carousel Transition Speed --*/
 .carousel-item-next,
@@ -322,6 +322,7 @@ textarea {
 .container1 {
   position: relative;
   width: 100%;
+  margin-top: 40px;
   padding-top: 0;
   background-image:( url('../img/ozadjeKontakt.jpg'));
   overflow: hidden;
