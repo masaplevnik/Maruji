@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
   color: #616971;
+ 
 }
 /*HEADER top bar*/
 
@@ -34,9 +35,26 @@ body {
   box-shadow: 0 .5rem .7rem rgba(0, 0, 0, .1);
   margin-bottom: 50px !important;
 }
+.socialtop {
+  float: right;
+  margin-right: 5%;
+}
+.top-social {
+  padding: 10px 10px;
+}
+.top-social a{
+  padding: 15px;
+  color: #555353;
+  font-size: 20px;
+}
+.top-social a:hover{
+  color: hsl(36, 59%, 58%);
+}
+
 /*NAVIGATION*/
 #navbar {
   z-index: 200;
+  margin-bottom: 50px !important;
 }
 .sticky {
   position: fixed;
@@ -64,24 +82,29 @@ body {
   padding: .5rem; 
 }
 .nav-link {
-  color: rgb(75, 56, 34)!important;
+  color: #555353!important;
   display: unset!important;
 }
 .nav-link.active {
-  color: rgb(82, 65, 34)!important;
+  color: hsl(36, 74%, 43%)!important;
   display: unset!important;
   text-decoration: unset!important;
 }
 .nav-link:hover {
-  color: rgb(255, 247, 220)!important;
+  color: rgb(255, 228, 188)!important;
 }
 .navbar a {
-  color: #7a5926!important;
+  color: #555353!important;
   padding: .5rem!important;
   text-decoration: unset!important;
 }
 li {
   text-align: right;
+}
+
+.menu-icon{
+  position: relative;
+  top: 50%;
 }
 /*CAROUSEL*/
 #carousel {
@@ -97,9 +120,10 @@ li {
   transition: transform 1.2s ease;
 }
 /*-- Carousel Content --*/
+
 .carousel-caption {
   position: absolute;
-  
+
   top: 54%;
   transform: translateY(-50%); /*in the middle*/
   text-transform: uppercase;
@@ -115,7 +139,6 @@ li {
 }
 .border-primary {
   border-top: .2rem solid hsl(36, 59%, 58%) !important;
-
 }
 .carousel-caption h3 {
   font-size: 2.2rem;
@@ -355,7 +378,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .form {
   width: 100%;
@@ -373,7 +395,6 @@ textarea {
   position: relative;
   border-radius: 1rem;
   opacity: 87%;
-  
 }
 /*.contact-form:before {
   content: "";
@@ -513,6 +534,8 @@ textarea.input {
 .text {
   color: rgb(255, 255, 255);
   margin: 1.9rem 0 2rem 0;
+  font-weight:500;
+  font-size: 16px;
 }
 .information {
   display: flex;
@@ -696,6 +719,11 @@ footer .svg-inline--fa:hover {
   }
 }
 
+
+.menu-icon{
+  
+  cursor: pointer;
+}
 
 
 

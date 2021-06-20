@@ -15,48 +15,73 @@
 </head>
 <body>
 
-    <!-- Top Bar -->
-	<div class="top-bar">
-		<div class="container">
-			<div class="col-12 text-right">
-				<p><a href="tel:+386890927">Pokličite</a></p>
-			</div>
-		</div>
-	</div>
-	<!-- End Top Bar -->
+    <div id="navbar">
 
-	<!-- Navigation -->
-	<nav class="navbar bg-light navbar-light navbar-expand-lg">
-		<div class="container">
+		<nav>
+			<div class="top-bar">
+				<div class="socialtop">
+					<div class="top-social">
+						<a href="#"><i class="fa fa-phone-alt"></i></a>
+						<a href="#"><i class="fa fa-user"></i></a>
+						<a href="#"><i class="fa fa-heart"></i></a>
+						<a href="#"><i class="fa fa-shopping-bag"></i></a>
 
-			<a href="index.html" class="navbar-brand"><img src="img/izdelki/logo/maruji-1 (1).png" alt="Logo" title="Logo"></a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link 
-						active">Domača stran</a></li>
-					<li class="nav-item"><a href="notesniki.html" class="nav-link">Notesniki</a></li>
-					<li class="nav-item"><a href="oNas.html" class="nav-link">O nas</a></li>
-					<li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
-				</ul>
-
+					</div>
+				</div>			
 			</div>
 
+		</nav>
+
+		<!-- Top Bar 
+		<div class="top-bar">
+			<div class="container">
+				
+				<img src="img/icons/baseline_call_black_24dp.png" onclick="menutoggle()" class="menu-icon">
+				<div class="col-12 text-right">
+					<p></p><a href="tel:+386890927"></a><img src="img/icons/baseline_call_black_24dp.png" class="menu-icon"></p>
+					
+					
+				</div>
+			</div>
 		</div>
-	</nav>
-	<!-- End Navigation -->
+		 End Top Bar -->
+
+
+		<!-- Navigation -->
+		<nav class="navbar bg-light navbar-light navbar-expand-lg">
+			<div class="container">
+
+				<a href="index.html" class="navbar-brand"><img src="img/logo/maruji-1 (1).png" alt="Logo" title="Logo"></a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="index.html" class="nav-link 
+							active">Domača stran</a></li>
+						<li class="nav-item"><a href="notesniki.html" class="nav-link">Notesniki</a></li>
+						<li class="nav-item"><a href="narediSam.html" class="nav-link">Naredi sam</a></li>
+						<li class="nav-item"><a href="oNas.html" class="nav-link">O nas</a></li>
+						<li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+		</nav>
+		<!-- End Navigation -->
 
 		<!-- Top Bar -->
-	<div class="top-bar-bottom">
-		<div class="container">
+		<div class="top-bar-bottom">
+			<div class="container">
+			</div>
 		</div>
+		<!-- End Top Bar -->
+
 	</div>
-	<!-- End Top Bar -->
 
     <!-- Start Fixed Background IMG 
 	<div class="fixed-background-kontakt">
@@ -88,7 +113,7 @@
 		<div class="container1">
 			<div class="form">
 			<div class="contact-info">
-				<h3 class="title">Let's get in touch</h3>
+				<h3 class="title">Spoznajmo se!</h3>
 				<p class="text">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
 				dolorum adipisci recusandae praesentium dicta! Et harum quidem rerum
@@ -98,20 +123,20 @@
 				<div class="info">
 				<div class="information">
 					<img src="img/outline_place_white_24dp.png" class="icon" alt="" />
-					<p>92 Cherry Drive Uniondale, NY 11553</p>
+					<p>Pot spominov 1, 1000 Ljubljana</p>
 				</div>
 				<div class="information">
-					<img src="img/outline_mail_white_24dp.png" class="icon" alt="" />
+					<img src="img/icons/outline_mail_white_24dp.png" class="icon" alt="" />
 					<p>lorem@ipsum.com</p>
 				</div>
 				<div class="information">
-					<img src="img/outline_phone_in_talk_white_24dp.png" class="icon" alt="" />
+					<img src="img/icons/outline_phone_in_talk_white_24dp.png" class="icon" alt="" />
 					<p>123-456-789</p>
 				</div>
 				</div>
 	
 				<div class="social-media">
-				<p>Connect with us :</p>
+				<p>Poiščite nas na:</p>
 				<div class="social-icons">
 					<a href="#">
 					<i class="fab fa-facebook-f"></i>
@@ -132,9 +157,9 @@
 			<div class="contact-form">
 
 				<form action="index.html" autocomplete="off">
-				<h3 class="title">Contact us</h3>
+				<h3 class="title">Pišite nam</h3>
 				<div class="input-container">
-					<input type="text" name="name" placeholder="Username..." class="input" />
+					<input type="text" name="name" placeholder="Uporabniško ime..." class="input" />
 					<label for=""></label>
 					<span>Username</span>
 				</div>
@@ -144,16 +169,16 @@
 					<span>Email</span>
 				</div>
 				<div class="input-container">
-					<input type="tel" name="phone" placeholder="Phone..." class="input" />
+					<input type="tel" name="phone" placeholder="Telefon..." class="input" />
 					<label for=""></label>
 					<span>Phone</span>
 				</div>
 				<div class="input-container textarea">
-					<textarea name="message" placeholder="Message..." class="input"></textarea>
+					<textarea name="message" placeholder="Sporočilo..." class="input"></textarea>
 					<label for=""></label>
 					<span>Message</span>
 				</div>
-				<input type="submit" value="Send" class="btn" />
+				<input type="submit" value="Pošlji" class="btn" />
 				</form>
 			</div>
 			</div>
@@ -170,29 +195,29 @@
 
 	<!--End contact form-->
 
-    <!-- Start Footer -->
-	<footer>
-		<div class="container">
-			<div class="row text-light text-center py-4 justify-content-center">
+   <!-- Start Footer -->
+ <footer>
+    <div class="container">
+        <div class="row text-light text-center py-4 justify-content-center">
 
-				<div class="col-sm-10 col-md-8 col-lg-6">
-					<img src="img/logo-white.png" alt="">
-					<p>At our core is a collection of design and development solutions
-						that represent everything your business needs to compete in 
-						the modern marketplace.</p>
-					<ul class="social pt-3">
-						<li><a href="#" 
-							target="_blank"><i class="fab fa-facebook"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
-					</ul>
-				</div>
+            <div class="col-sm-10 col-md-8 col-lg-6">
+                <img src="img/logo/maruji-1-b.png" alt="">
+                <p>At our core is a collection of design and development solutions
+                    that represent everything your business needs to compete in 
+                    the modern marketplace.</p>
+                <ul class="social pt-3">
+                    <li><a href="#" 
+                        target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
 
-			</div>
-		</div>
-	</footer>
-	<!-- End Footer -->
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
 
 
 

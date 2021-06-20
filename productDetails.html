@@ -15,48 +15,73 @@
 </head>
 <body>
 
-    <!-- Top Bar -->
-	<div class="top-bar">
-		<div class="container">
-			<div class="col-12 text-right">
-				<p><a href="tel:+386890927">041 376 523</a></p>
-			</div>
-		</div>
-	</div>
-	<!-- End Top Bar -->
+    <div id="navbar">
 
-	<!-- Navigation -->
-	<nav class="navbar bg-light navbar-light navbar-expand-lg">
-		<div class="container">
+		<nav>
+			<div class="top-bar">
+				<div class="socialtop">
+					<div class="top-social">
+						<a href="#"><i class="fa fa-phone-alt"></i></a>
+						<a href="#"><i class="fa fa-user"></i></a>
+						<a href="#"><i class="fa fa-heart"></i></a>
+						<a href="#"><i class="fa fa-shopping-bag"></i></a>
 
-			<a href="index.html" class="navbar-brand"><img src="img/izdelki/logo/maruji-1 (1).png" alt="Logo" title="Logo"></a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link 
-						active">Domača stran</a></li>
-					<li class="nav-item"><a href="notesniki.html" class="nav-link">Notesniki</a></li>
-					<li class="nav-item"><a href="oNas.html" class="nav-link">O nas</a></li>
-					<li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
-				</ul>
-
+					</div>
+				</div>			
 			</div>
 
-		</div>
-	</nav>
-	<!-- End Navigation -->
+		</nav>
 
-    	<!-- Top Bar -->
-	<div class="top-bar-bottom">
-		<div class="container">
+		<!-- Top Bar 
+		<div class="top-bar">
+			<div class="container">
+				
+				<img src="img/icons/baseline_call_black_24dp.png" onclick="menutoggle()" class="menu-icon">
+				<div class="col-12 text-right">
+					<p></p><a href="tel:+386890927"></a><img src="img/icons/baseline_call_black_24dp.png" class="menu-icon"></p>
+					
+					
+				</div>
+			</div>
 		</div>
+		 End Top Bar -->
+
+
+		<!-- Navigation -->
+		<nav class="navbar bg-light navbar-light navbar-expand-lg">
+			<div class="container">
+
+				<a href="index.html" class="navbar-brand"><img src="img/logo/maruji-1 (1).png" alt="Logo" title="Logo"></a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="index.html" class="nav-link 
+							active">Domača stran</a></li>
+						<li class="nav-item"><a href="notesniki.html" class="nav-link">Notesniki</a></li>
+						<li class="nav-item"><a href="narediSam.html" class="nav-link">Naredi sam</a></li>
+						<li class="nav-item"><a href="oNas.html" class="nav-link">O nas</a></li>
+						<li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+		</nav>
+		<!-- End Navigation -->
+
+		<!-- Top Bar -->
+		<div class="top-bar-bottom">
+			<div class="container">
+			</div>
+		</div>
+		<!-- End Top Bar -->
+
 	</div>
-	<!-- End Top Bar -->
 
     <!--------------single-product--------------->
 
@@ -231,7 +256,7 @@
             } 
     }
     
-//-------------Produc Gallery------------
+//-------------Product Gallery------------
     
     var ProductImg = document.getElementById("ProductImg");
     
