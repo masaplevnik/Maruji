@@ -11,8 +11,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #616971;
 }
-
 /*HEADER top bar*/
+
 .top-bar {
   /*background:hsl(39, 52%, 76%);*/
   background-image: url('../img/OzadjeWhitePaint.jpg');
@@ -32,25 +32,33 @@ body {
   padding: .5rem 0;
   box-sizing: content-box;
   box-shadow: 0 .5rem .7rem rgba(0, 0, 0, .1);
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
-
 /*NAVIGATION*/
+#navbar {
+  z-index: 200;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*.sticky + .content {
+  padding-top: 60px;
+}*/
 .navbar-brand img {
   height: 9rem;
   position:absolute;
   margin-top: -70px;
   margin-left: 15px;
-  
 }
 .navbar {
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: .12rem;
-  box-shadow: 0.2rem .2rem 1rem #dab97dc9;
+  box-shadow: 0.2rem .1rem .5rem #dab97dc9;
   z-index: 1; /*on top of the image*/
-  background-image: linear-gradient(to right, #fdfbf7, #d6ae64);
-  
+  background-image: linear-gradient(to right, #fdfbf7, hsl(36, 59%, 58%));
 }
 .nav-item {
   padding: .5rem; 
@@ -58,8 +66,6 @@ body {
 .nav-link {
   color: rgb(75, 56, 34)!important;
   display: unset!important;
-  
- 
 }
 .nav-link.active {
   color: rgb(82, 65, 34)!important;
@@ -74,13 +80,9 @@ body {
   padding: .5rem!important;
   text-decoration: unset!important;
 }
-
 li {
   text-align: right;
 }
-
-
-
 /*CAROUSEL*/
 #carousel {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
@@ -97,6 +99,7 @@ li {
 /*-- Carousel Content --*/
 .carousel-caption {
   position: absolute;
+  
   top: 54%;
   transform: translateY(-50%); /*in the middle*/
   text-transform: uppercase;
@@ -111,16 +114,14 @@ li {
   text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
 }
 .border-primary {
-  border-top: .2rem solid hsl(39, 56%, 59%) !important;
+  border-top: .2rem solid hsl(36, 59%, 58%) !important;
 
 }
 .carousel-caption h3 {
   font-size: 2.2rem;
   text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
 }
-
 /*===== JUMBOTRON =====*/
-
 .mb-0, .my-0 {
   margin-bottom: 0px !important;
 }
@@ -163,8 +164,8 @@ li {
 .btnCART{
   padding: 8px 30px;
   padding: 0.6rem 1.3rem;
-  background-color: hsl(39, 56%, 59%);
-  border: 2px solid #9d6022;
+  background-color: hsl(31, 60%, 55%);
+  border: 2px solid hsl(31, 60%, 55%);
   font-size: 0.95rem;
   color: #ffffff;
   line-height: 1;
@@ -177,7 +178,7 @@ li {
   position: absolute;
 }
 .btnCART:hover{
-  background: rgb(202, 154, 65);
+  background: hsl(31, 78%, 18%);
   color: #ffffff;
   text-decoration: none;
 }
@@ -258,7 +259,7 @@ h4{
   font-size: 14px;
 }
 .rating .fa{
-  color: hsl(39, 56%, 59%);
+  color: hsl(36, 59%, 58%);
 }
 .col-4:hover{
   transform: translateY(-5px);
@@ -283,7 +284,8 @@ h4{
   display: block;
   padding: 10px;
   margin-top: 20px;
-  border: 1px solid hsl(39, 56%, 59%);
+  border: 2px solid hsl(31, 60%, 55%);
+  border-radius: 7px;
 }
 
 .single-product input{
@@ -292,7 +294,7 @@ h4{
   padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
-  border: 2px solid hsl(39, 56%, 59%);
+  border: 2px solid hsl(31, 60%, 55%);
   margin-top: 20px;
 }
 input:focus{
@@ -300,7 +302,7 @@ input:focus{
 }
 
 .single-product .fa{
-  color: hsl(39, 56%, 59%);
+  color:hsl(31, 60%, 55%);
   margin-left: 10px;
 }
 .small-img-row{
@@ -331,17 +333,12 @@ input:focus{
 }
 
 /*---O NAS---*/
-
 .padding {
   padding: 80px 0;
 }
 .padding img {
   width: 100%;
 }
-
-
-
-
 /*---KONTAKT FORM---*/
 body,
 input,
@@ -372,13 +369,13 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
 }
 .contact-form {
-  background-color: hsla(31, 53%, 24%, 0.987);
+  background-color: hsla(30, 53%, 39%, 0.987);
   position: relative;
   border-radius: 1rem;
-  opacity: 90%;
+  opacity: 87%;
   
 }
-.contact-form:before {
+/*.contact-form:before {
   content: "";
   position: absolute;
   width: 26px;
@@ -388,7 +385,7 @@ textarea {
   top: 50px;
   left: -13px;
   border-radius: 4px;
-}
+}*/
 form {
   padding: 2.3rem 2.2rem;
   z-index: 10;
@@ -449,7 +446,7 @@ textarea.input {
 }
 .btn {
   padding: 0.6rem 1.3rem;
-  background-color: #fff !important;
+  background-color:white !important;
   border: 2px solid hsl(31, 60%, 55%) !important;
   font-size: 0.95rem;
   color: #543315;
@@ -510,7 +507,7 @@ textarea.input {
   position: relative;
 }
 .contact-info .title {
-  color: #f7dfca;
+  color: #ffffff;
   font-weight: 600;
 }
 .text {
@@ -543,7 +540,7 @@ textarea.input {
   width: 37px;
   height: 37px;
   border-radius: 5px;
-  background: linear-gradient(45deg, hsl(39, 56%, 59%), rgb(202, 154, 65));
+  background: linear-gradient(45deg, hsl(36, 59%, 58%), hsla(30, 53%, 39%, 0.987));
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -626,19 +623,21 @@ textarea.input {
 
 /*============= FOOTER =============*/
 footer {
-  background-color: #3f2d1f;
+  background-color: #000000;
   background-image: url('../img/OzadjeWhitePaint.jpg');
  /*background-image: linear-gradient(#7c5835, #493428);*/
   padding: 1rem 2rem 3 rem;
+  margin-top: 50px;
   
 }
 footer img {
-  height: 3.5rem;
-  margin: 1.5rem auto;
+  height: 7rem;
+ 
+  position:relative;
 }
 footer p, footer a,
 .socket a {
-  color: rgb(61, 57, 52);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 ul.social {
@@ -655,14 +654,10 @@ footer .svg-inline--fa {
   font-size: 2.3rem;
 }
 footer .svg-inline--fa:hover {
-  color: rgb(202, 154, 65);
+  color:hsl(31, 60%, 55%);
 }
 
-
-
 /*============= SOCKET =============*/
-
-
 
 /*============= MEDIA QUERIES =============*/
 
@@ -672,7 +667,6 @@ footer .svg-inline--fa:hover {
 }
 /* Devices under 768px (md) */
 @media (max-width: 767.98px) {
-
 }
 
 /*---------- 600 media query -------*/

@@ -14,52 +14,54 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div id="navbar">
 
-	<!-- Top Bar -->
-	<div class="top-bar">
-		<div class="container">
-			<div class="col-12 text-right">
-				<p><a href="tel:+386890927">041 376 523</a></p>
+		<!-- Top Bar -->
+		<div class="top-bar">
+			<div class="container">
+				<div class="col-12 text-right">
+					<p><a href="tel:+386890927">041 376 523</a></p>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- End Top Bar -->
+		<!-- End Top Bar -->
 
 
-	<!-- Navigation -->
-	<nav class="navbar bg-light navbar-light navbar-expand-lg">
-		<div class="container">
+		<!-- Navigation -->
+		<nav class="navbar bg-light navbar-light navbar-expand-lg">
+			<div class="container">
 
-			<a href="index.html" class="navbar-brand"><img src="img/izdelki/logo/maruji-1 (1).png" alt="Logo" title="Logo"></a>
+				<a href="index.html" class="navbar-brand"><img src="img/izdelki/logo/maruji-1 (1).png" alt="Logo" title="Logo"></a>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link 
-						active">Domača stran</a></li>
-					<li class="nav-item"><a href="notesniki.html" class="nav-link">Notesniki</a></li>
-					<li class="nav-item"><a href="oNas.html" class="nav-link">O nas</a></li>
-					<li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
-				</ul>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="index.html" class="nav-link 
+							active">Domača stran</a></li>
+						<li class="nav-item"><a href="notesniki.html" class="nav-link">Notesniki</a></li>
+						<li class="nav-item"><a href="narediSam.html" class="nav-link">Naredi sam</a></li>
+						<li class="nav-item"><a href="oNas.html" class="nav-link">O nas</a></li>
+						<li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+					</ul>
+
+				</div>
 
 			</div>
+		</nav>
+		<!-- End Navigation -->
 
+		<!-- Top Bar -->
+		<div class="top-bar-bottom">
+			<div class="container">
+			</div>
 		</div>
-	</nav>
-	<!-- End Navigation -->
+		<!-- End Top Bar -->
 
-	<!-- Top Bar -->
-	<div class="top-bar-bottom">
-		<div class="container">
-		</div>
 	</div>
-	<!-- End Top Bar -->
-
-
 
 
 	<!-- Image Carousel -->
@@ -233,7 +235,7 @@
 			<div class="row text-light text-center py-4 justify-content-center">
 
 				<div class="col-sm-10 col-md-8 col-lg-6">
-					<img src="img/logo-white.png" alt="">
+					<img src="img/izdelki/logo/maruji-1-b.png" alt="">
 					<p>At our core is a collection of design and development solutions
 						that represent everything your business needs to compete in 
 						the modern marketplace.</p>
@@ -272,5 +274,21 @@
 	<script src="js/all.min.js"></script>
 
 	<!-- End Script Source Files -->
+
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	console.log(navbar)
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	} else {
+		navbar.classList.remove("sticky");
+	}
+	}
+</script>
 </body>
 </html>
